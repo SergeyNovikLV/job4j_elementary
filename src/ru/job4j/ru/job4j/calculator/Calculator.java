@@ -12,7 +12,7 @@ package ru.job4j.ru.job4j.calculator;
   - переменную типа int c именем fiveMinusTwo и присвойте ей значение арифметической операции вычитания переменной five c two.
   - переменную типа int c именем fourTimeTwo и присвойте ей значение арифметической операции умножения переменной four на two.
 
-3. Выведите на консоль переменные sixDivTwo, fiveMinusTwo, fourTimeTwo.
+3. Выведите на консоль переменные sixDivTwo, fiveMinusTwo, fourTimeTwo
  */
 
 public class Calculator {
