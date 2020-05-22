@@ -8,7 +8,9 @@ s = L * h;
  */
 public class SqArea {
     public static double square(int p, int k) {
-        double rsl = k * (p / (2 * (k + 1))) * p / (2 * (k + 1));
+        double h = p / (2 * (k + 1));
+        double l = h * k;
+        double rsl = l * h;
         return rsl;
     }
 
