@@ -2,7 +2,7 @@ package ru.job4j.converter;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+// переместил файл с классом класс ConverterTest в папку test
 public class ConverterTest {
 
     @Test
