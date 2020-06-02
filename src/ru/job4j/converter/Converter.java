@@ -30,9 +30,9 @@ public class Converter {
     }
 
     /**
-     * Method main
+     * Method main, вызывает методы конвертации и выводит на экран результы конвертации.
      * @param args - args.
-    */
+     */
 
     public static void main(String[] args) {
         int euro = Converter.rubleToEuro(140);
@@ -41,7 +41,7 @@ public class Converter {
         System.out.println("140 rubles are " + dollar + " dollars.");
 
         /*
-         * переменная для проверки корректности конвертации в евро.
+         * Код для проверки корректности конвертации в евро.
          * переменная in - входные данные количество рублей.
          * переменная expectedEuro -ожидаемое значение количество евро.
          * переменная out -результат работы программы.
@@ -54,7 +54,7 @@ public class Converter {
         System.out.println("140 rubles are 2. Test result : " + passedRblTest);
 
         /*
-         * Тестовый код для проверки корректности конвертации в доллары.
+         * Код для проверки корректности конвертации в доллары.
          * переменная in - входные данные количество рублей.
          * переменная expectedEuro -ожидаемое значение количество долларах.
          * переменная out -результат работы программы.
