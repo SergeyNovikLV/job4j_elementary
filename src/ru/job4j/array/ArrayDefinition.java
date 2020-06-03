@@ -1,20 +1,5 @@
 package ru.job4j.array;
 
-import java.util.Arrays;
-
-/*
-Задание.
-
-
-2. Создайте внутри метода main массив String на 4 ячейки. Дайте имя переменной созданного массива - names.
-
-3. Заполните массив произвольными именами. Заполнение производить через обращение по индексу.
-
-Например.
-
-names[0] = "Petr Arsentev";
-4. После этого выведите каждую ячейку на консоль.
- */
 public class ArrayDefinition {
     public static void main(String[] args) {
         short[] ages = new short[10];
