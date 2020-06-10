@@ -7,32 +7,52 @@ import static org.junit.Assert.assertThat;
 public class FindLoopTest {
 
     @Test
-    public void whenArrayHas5Then0() {
-        FindLoop find = new FindLoop();
+    public void whenArrayHasLength5Then0() {
         int[] input = new int[] {5, 10, 3};
         int value = 5;
-        int result = find.indexOf(input, value);
+        int result = FindLoop.indexOf(input, value);
         int expect = 0;
         assertThat(result, is(expect));
     }
 
     @Test
-    public void whenArrayHas16Then4() {
-        FindLoop find = new FindLoop();
-        int[] input = new int[] {5, 10, 3, 12, 16, 18};
-        int value = 16;
-        int result = find.indexOf(input, value);
-        int expect = 4;
+    public void whenArrayHasLength6Then1() {
+        int[] input = new int[] {5, 6, 10, 3};
+        int value = 6;
+        int result = FindLoop.indexOf(input, value);
+        int expect = 1;
         assertThat(result, is(expect));
     }
 
     @Test
-    public void whenArrayHas20Then5() {
-        FindLoop find = new FindLoop();
-        int[] input = new int[] {5, 10, 3, 12, 16, 18};
-        int value = 20;
-        int result = find.indexOf(input, value);
-        int expect = 4;
+    public void whenCannotFind8() {
+        int[] input = new int[] {5, 6, 10, 3};
+        int value = 8;
+        int result = FindLoop.indexOf(input, value);
+        int expect = -1;
+        assertThat(result, is(expect));
+    }
+
+
+    @Test
+    public void whenFind3() {
+        int[] input = new int[] {5, 2, 10, 2, 4};
+        int value = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = 3;
+        assertThat(result, is(expect));
+    }
+
+    @Test
+    public void whenCannotFind2() {
+        int[] input = new int[] {0, 1, 9, 3, 4};
+        int value = 8;
+        int start = 0;
+        int finish = 2;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = -1;
         assertThat(result, is(expect));
     }
 }
