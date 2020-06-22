@@ -1,6 +1,8 @@
 package ru.job4j.array;
 import java.util.Arrays;
-
+/*
+исправил == на !=
+ */
 public class ArrayChar {
 
     public static boolean startsWith(char[] word, char[] pref) {
